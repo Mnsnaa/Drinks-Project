@@ -1,0 +1,1 @@
+INSERT INTO DRINK( amount,name , price , type ) VALUES( 2, 'garage' , 250,'type' );

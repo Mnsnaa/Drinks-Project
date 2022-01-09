@@ -101,6 +101,7 @@ public class Drink {
 	}
 
 	
+
 	@Override
 	public String toString() {
 		return "Drink [id=" + id + ", name=" + name + ", type=" + type + ", price=" + price + ", amount=" + amount
