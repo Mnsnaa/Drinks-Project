@@ -1,0 +1,1 @@
+INSERT INTO drink ( name , type , price , amount ) VALUES ( 'Pepsi' , 'fizzy', 1 , 330 );
