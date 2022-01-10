@@ -1,1 +1,1 @@
-INSERT INTO DRINK( amount,name , price , type ) VALUES( 2, 'garage' , 250,'type' );
+INSERT INTO drink ( name , type , price , amount ) VALUES ( 'Pepsi' , 'fizzy', 1 , 330 );

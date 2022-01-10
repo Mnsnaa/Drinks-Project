@@ -45,4 +45,30 @@ public class DrinkServiceUnitTest {
 			
 			Mockito.verify(this.repo, Mockito.times(1)).save(input);
 		}
+		
+		
+		@Test
+		public void ReadAllTest() {
+			
+			Drink input  =  new Drink ( "Fanta" , "fizzy" ,  2 , 250);
+			
+
+			// Here we are testing the actual method within the create method from DrinkService
+			 
+			
+			Mockito.when(this.repo.save(input)).thenReturn(input);
+
+			//  Here we are checking the expected value (output) is the same as the actual value (method itself)
+			 
+
+			assertEquals(input, this.service.create(input));
+
+			// Verifies that repo is run 1 time, and that it saves the input
+			
+			Mockito.verify(this.repo, Mockito.times(1)).save(input);
+		}
+		
+	
+		
+		
 	}
